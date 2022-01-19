@@ -1,0 +1,75 @@
+@import url("https://fonts.googleapis.com/css2?family=Satisfy&family=Vollkorn&display=swap");
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-size: 62.5%;
+  font-family: "Vollkorn", serif;
+  color: aliceblue;
+}
+h1 {
+  font-size: 3.6rem;
+}
+
+header {
+  height: 100vh;
+  background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.6)),
+    url(header.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+nav {
+  padding: 2% 8%;
+  display: flex;
+  justify-content: space-between;
+}
+ul {
+  list-style-type: none;
+  margin-top: 2rem;
+}
+
+li {
+  display: inline;
+  margin-left: 1.5rem;
+}
+
+a {
+  text-decoration: none;
+  font-size: 1.6rem;
+}
+
+.logo h1 {
+  color: #cb997e;
+}
+
+a:hover {
+  color: #cb997e;
+  transition: 0.5s ease-in-out;
+}
+.icono-menu {
+  display: none;
+}
+/* Diseño responsivo */
+@media only screen and (max-width: 700px) {
+  .icono-menu {
+    display: block;
+    position: absolute;
+    right: 36px;
+    top: 26px;
+  }
+  nav {
+    flex-direction: column;
+  }
+
+  nav ul {
+    background-color: beige;
+    display: block;
+  }
+  nav ul li {
+    display: none;
+  }
+  nav ul li a {
+    display: none;
+  }
+}
