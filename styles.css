@@ -1,12 +1,15 @@
-@import url("https://fonts.googleapis.com/css2?family=Satisfy&family=Vollkorn&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Dongle&display=swap");
+
 * {
-  margin: 0px;
-  padding: 0px;
+  margin: 0;
+  padding: 0;
   box-sizing: border-box;
   font-size: 62.5%;
-  font-family: "Vollkorn", serif;
-  color: aliceblue;
+  font-family: "Poppins", sans-serif;
+  color: white;
 }
+
 h1 {
   font-size: 3.6rem;
 }
@@ -19,11 +22,13 @@ header {
   background-size: cover;
   background-position: center;
 }
+
 nav {
   padding: 2% 8%;
   display: flex;
   justify-content: space-between;
 }
+
 ul {
   list-style-type: none;
   margin-top: 2rem;
@@ -41,35 +46,95 @@ a {
 
 .logo h1 {
   color: #cb997e;
+  font-family: "Neonderthaw", cursive;
 }
 
 a:hover {
   color: #cb997e;
   transition: 0.5s ease-in-out;
 }
-.icono-menu {
+
+.icono {
   display: none;
 }
-/* Diseño responsivo */
-@media only screen and (max-width: 700px) {
-  .icono-menu {
+
+.contenido-header {
+  width: 50%;
+  position: relative;
+  top: 16%;
+  left: 10%;
+}
+
+h2 {
+  font-size: 4rem;
+}
+
+p {
+  font-size: 1.6rem;
+}
+
+form {
+  margin-top: 3%;
+}
+
+input {
+  font-size: 1.6rem;
+  width: 50%;
+}
+
+.suscribirse {
+  display: block;
+  margin-top: 3%;
+  width: 50%;
+  font-size: 1.6rem;
+  background-color: blanchedalmond;
+  color: #cb997e;
+  border: 1px solid bisque;
+}
+
+.contenedor-acerca {
+  display: flex;
+  justify-content: space-around;
+}
+
+h3 {
+  color: black;
+  font-size: 2rem;
+}
+
+.quienes-somos,
+.historia,
+.mision-vision {
+  width: 30%;
+}
+
+@media only screen and (max-width: 768px) {
+  .icono {
     display: block;
     position: absolute;
     right: 36px;
     top: 26px;
   }
+
   nav {
     flex-direction: column;
   }
 
   nav ul {
     background-color: beige;
+    display: none;
+  }
+
+  .mostrar {
     display: block;
   }
+
   nav ul li {
-    display: none;
+    display: block;
+    padding: 1% 0;
   }
+
   nav ul li a {
-    display: none;
+    color: black;
   }
 }
