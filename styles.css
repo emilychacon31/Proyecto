@@ -10,11 +10,11 @@
   color: white;
 }
 
-h1 {
+.titulo-principal {
   font-size: 3.6rem;
 }
 
-header {
+.encabezado {
   height: 100vh;
   background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.6)),
     url(header.jpg);
@@ -23,18 +23,18 @@ header {
   background-position: center;
 }
 
-nav {
+.navbar {
   padding: 2% 8%;
   display: flex;
   justify-content: space-between;
 }
 
-ul {
+.navbar-lista {
   list-style-type: none;
   margin-top: 2rem;
 }
 
-li {
+.navbar-elementos {
   display: inline;
   margin-left: 1.5rem;
 }
@@ -65,19 +65,19 @@ a:hover {
   left: 10%;
 }
 
-h2 {
+.titulo-secundario {
   font-size: 4rem;
 }
 
-p {
+.parrafo-principal {
   font-size: 1.6rem;
 }
 
-form {
+.form.sub {
   margin-top: 3%;
 }
 
-input {
+.email {
   font-size: 1.6rem;
   width: 50%;
 }
@@ -97,9 +97,25 @@ input {
   justify-content: space-around;
 }
 
-h3 {
+.titulos {
   color: black;
-  font-size: 2rem;
+  font-size: 3rem;
+}
+.subtitulos {
+  color: black;
+  font-size: 1.7rem;
+}
+.parrafo {
+  color: black;
+  font-size: 0.8rem;
+}
+.btn {
+  background-color: blanchedalmond;
+  color: #cb997e;
+  padding: 8px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
 }
 
 .quienes-somos,
@@ -107,7 +123,68 @@ h3 {
 .mision-vision {
   width: 30%;
 }
+.foto-acerca {
+  width: 80%;
+}
+.contenedor-testimonio {
+  display: flex;
+  justify-content: space-between;
+  padding: 5rem;
+}
+.tarjeta-testimonio {
+  flex-basis: 50%;
+}
+.foto-perfil {
+  height: 20rem;
+  width: 20rem;
+  border-radius: 50%;
+  border: 2px solid blanchedalmond;
+}
+.datos-cliente {
+  display: flex;
+}
+.nombre-cliente {
+  padding: 2rem, 1.5rem;
+}
+.testimonios {
+  background-color: #cb997e;
+  text-align: center;
+}
+.contacto {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 5rem;
+}
+.formulario-contacto {
+  display: flex;
 
+  flex-direction: column;
+  width: 40%;
+  align-items: center;
+}
+.formulario-contacto input {
+  width: 40rem;
+  margin-bottom: 1rem;
+  color: black;
+}
+.formulario-contacto textarea {
+  width: 40rem;
+  height: 15rem;
+  color: black;
+  font-size: 1.6rem;
+}
+.formulario-contacto button {
+  width: 40rem;
+  margin-bottom: 1rem;
+}
+.pie-pagina {
+  background-color: blanchedalmond;
+  color: black;
+  text-align: end;
+  height: 3rem;
+}
 @media only screen and (max-width: 768px) {
   .icono {
     display: block;

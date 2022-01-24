@@ -1,62 +1,143 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
-    />
-    <link rel="stylesheet" href="styles.css" />
-    <title>Página Web</title>
-  </head>
-  <body>
-    <header>
-      <nav>
-        <div class="logo">
-          <h1>Veterinaria</h1>
-        </div>
-        <ul>
-          <li><a href="#">Inicio</a></li>
-          <li><a href="#">Acerca</a></li>
-          <li><a href="#">Proceso</a></li>
-          <li><a href="#">Testimonios</a></li>
-          <li><a href="#">Contacto</a></li>
-        </ul>
-        <i class="fas fa-bars fa-9x icono" id="menu"></i>
-      </nav>
-      <div class="contenido-header">
-        <h2>Un título con contenido</h2>
-        <p>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+  <link rel="stylesheet" href="styles.css" />
+  <title>Página Web</title>
+</head>
+
+<body>
+  <header class="encabezado">
+    <nav class="navbar">
+      <div class="logo">
+        <h1 class="titulo-principal">Veterinaria</h1>
+      </div>
+      <ul class="navbar-lista">
+        <li class="navbar-elementos"><a href="#">Inicio</a></li>
+        <li class="navbar-elementos"><a href="#">Acerca</a></li>
+        <li class="navbar-elementos"><a href="#">Testimonios</a></li>
+        <li class="navbar-elementos"><a href="#">Contacto</a></li>
+      </ul>
+      <i class="fas fa-bars fa-9x icono" id="menu"></i>
+    </nav>
+    <div class="contenido-header">
+      <h2 class="titulo-secundario">Un título con contenido</h2>
+      <p class="parrafo-principal">
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quos
+        recusandae in quis eveniet beatae, aut earum neque delectus nesciunt,
+        nulla ex ipsam. Ratione, mollitia qui? Exercitationem, suscipit
+        tempora. Error, eos!
+      </p>
+      <form class="form-sub">
+        <input class="email" type="email" />
+        <button class="suscribirse" type="button">Suscribirse</button>
+      </form>
+    </div>
+  </header>
+  <section class="acerca">
+    <div class="contenedor-acerca">
+      <div class="quienes-somos">
+        <h3 class="titulos">Compañia</h3>
+        <h4>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quos
+          recusandae in quis eveniet beatae, aut earum neque delectus nesciunt,
+          nulla ex ipsam. Ratione, mollitia qui? Exercitationem, suscipit
+          tempora. Error, eos!</h4>
+        <br />
+        <img class="foto-acerca"
+          src="https://www.clinicaveterinariaejea.com/wp-content/uploads/2020/03/Equipo-Clinica-Veterinaria-Ejea-1-480x300.jpeg"
+          alt="Foto del equipo" />
+      </div>
+      <div class="historia">
+        <h3 class="titulos">Historia</h3>
+        <br />
+        <h4 class="subtitulos">Quienes somos?</h4>
+        <br />
+        <p class="parrafo">
           Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quos
           recusandae in quis eveniet beatae, aut earum neque delectus nesciunt,
           nulla ex ipsam. Ratione, mollitia qui? Exercitationem, suscipit
-          tempora. Error, eos!
-        </p>
-        <form>
-          <input type="email" />
-          <button class="suscribirse" type="button">Suscribirse</button>
-        </form>
+          tempora. Error, eos!</p>
+        <button class="btn">Leer más</button>
       </div>
-    </header>
-    <section class="acerca">
-      <div class="contenedor-acerca">
-        <div class="quienes-somos">
-          <h3>Compañia</h3>
-          <img
-            src="https://www.clinicaveterinariaejea.com/wp-content/uploads/2020/03/Equipo-Clinica-Veterinaria-Ejea-1-480x300.jpeg"
-            alt="Foto del equipo"
-          />
-        </div>
-        <div class="historia">
-          <h3>Historia</h3>
-        </div>
-        <div class="mision-vision">
-          <h3>Misión / Visión</h3>
-        </div>
+      <div class="mision-vision">
+        <h3 class="titulos">Misión / Visión</h3>
+        <br />
+        <h4 class="subtitulos">Mision</h4>
+        <br />
+        <p class="parrafo">
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quos
+          recusandae in quis eveniet beatae, aut earum neque delectus nesciunt,
+          nulla ex ipsam. Ratione, mollitia qui? Exercitationem, suscipit
+          tempora. Error, eos!</p>
+        <h4 class="subtitulos">Vision</h4>
+        <br />
+        <p class="parrafo">
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quos
+          recusandae in quis eveniet beatae, aut earum neque delectus nesciunt,
+          nulla ex ipsam. Ratione, mollitia qui? Exercitationem, suscipit
+          tempora. Error, eos!</p>
+        <br>
+        <button class="btn">Leer más</button>
+
       </div>
-    </section>
-    <script src="app.js"></script>
-  </body>
+    </div>
+  </section>
+  <section class="testimonios">
+    <div class="contenedor-testimonio">
+      <div class="tarjeta-testimonio">
+        <div class="datos-cliente">
+          <div class="foto-cliente">
+            <img class="foto-perfil"
+              src="https://img1.wsimg.com/isteam/ip/6dd79931-9962-4d98-aa6e-d2058f447107/gFE4A8233.jpg/:/cr=t:12.32%25,l:0%25,w:100%25,h:67.19%25/rs=w:365,h:365,cg:true"
+              alt="foto de cliente">
+          </div>
+          <div class="nombre-cliente">
+            <h4 class="subtitulos">Luisa Martinez Chaves</h4>
+            <h4 class="subtitulos">San Antonio, Heredia</h4>
+          </div>
+        </div>
+        <p class="parrafo">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Itaque sequi, veritatis fuga
+          voluptate mollitia cupiditate voluptatibus maxime beatae nesciunt eum laborum assumenda amet in dolorem quae
+          modi reiciendis nostrum? Ut. </p>
+      </div>
+      <div class="tarjeta-testimonio">
+        <div class="datos-cliente">
+          <div class="foto-cliente">
+            <img class="foto-perfil" src="https://www.eagars.co.nz/webfiles/funerals/5d198c1d8bcf5.jpg"
+              alt="foto de cliente">
+          </div>
+          <div class="nombre-cliente">
+            <h4 class="subtitulos">Carlos Durám</h4>
+            <h4 class="subtitulos">San Sebastián, San José</h4>
+          </div>
+        </div>
+        <p class="parrafo">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Itaque sequi, veritatis fuga
+          voluptate mollitia cupiditate voluptatibus maxime beatae nesciunt eum laborum assumenda amet in dolorem quae
+          modi reiciendis nostrum? Ut. </p>
+      </div>
+    </div>
+  </section>
+  <section class="contacto">
+    <h3 class="titulos">Contáctanos</h3>
+    <form class="formulario-contacto">
+      <h4 class="subtitulos">Nombre completo</h4>
+      <input type="text" placeholder="Escriba su nombre">
+      <h4 class="subtitulos">Correo electronico</h4>
+      <input type="email" placeholder="Escriba su email">
+      <h4 class="subtitulos">Consulta</h4>
+      <textarea> Escriba su mensaje</textarea>
+      <button class="btn"> Contactar</button>
+    </form>
+  </section>
+  <footer class="pie-pagina">
+    <p>Hecho por Emily Chacón💓</p>
+    <a href="https://facebook.com"> <i class="fab fa facebook" </a>
+  </footer>
+  <script src="app.js"></script>
+</body>
+
 </html>
